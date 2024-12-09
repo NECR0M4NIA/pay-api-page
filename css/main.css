@@ -15,10 +15,45 @@ nav {
 
 .nav-btn {
     display: none;
+    font-family: Public Sans;
+    font-weight: 700;
+    text-decoration: none;
+    color: #36536B;
+}
+
+.cta {
+
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
+    .burger-menu {
+        display: none;
+        width: 90%;
+    }
+
     .nav-btn {
         display: block;
+    }
+
+    .cta {
+        display: inline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 172px;
+        height: 48px;
+        background-color: #BA4270;
+        border-radius: 24px;
+        font-family: Public Sans;
+        font-weight: 700;
+        text-decoration: none;
+        color: #FBFCFE;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .burger-menu {
+        display: none;
     }
 }
