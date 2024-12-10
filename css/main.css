@@ -13,16 +13,90 @@ nav {
     margin-top: 40px;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+input {
+    width: 445px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background-color: #FBFCFE;
+    padding-left: 27px;
+    margin-top: 40px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.schedule-btn {
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background-color: #BA4270;
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.schedule-btn:hover {
+    background-color: #DA6D97;
+}
+
+.question {
+    font-family: Public Sans;
+    font-weight: 400;
+    font-size: 15px;
+    color: #6C8294;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.question a {
+    font-weight: 700;
+    color: #36536B;
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: DM Serif Sans;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    width: 570px;
+    color: #36536B;
+}
+
 .nav-btn {
     display: none;
     font-family: Public Sans;
     font-weight: 700;
     text-decoration: none;
+    color: #36536ba6;
+    transition: 150ms;
+}
+
+.nav-btn:hover {
     color: #36536B;
 }
 
-.cta {
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 48px;
+}
 
+.cta {
     display: none;
 }
 
@@ -30,6 +104,21 @@ nav {
     .burger-menu {
         display: none;
         width: 90%;
+    }
+
+    nav {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-btn {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .navbar {
+        display: flex;
     }
 
     .nav-btn {
@@ -49,10 +138,26 @@ nav {
         font-weight: 700;
         text-decoration: none;
         color: #FBFCFE;
+        transition: 150ms;
+    }
+
+    .cta:hover {
+        background-color: #DA6D97;
     }
 }
 
 @media screen and (min-width: 1024px) {
+
+    nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-btn {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     .burger-menu {
         display: none;
     }
