@@ -13,16 +13,28 @@ nav {
     margin-top: 40px;
 }
 
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input {
-    width: 445px;
+    width: 100%;
     height: 48px;
     border-radius: 24px;
     border: none;
@@ -33,8 +45,9 @@ input {
 }
 
 .schedule-btn {
-    width: 173px;
+    width: 100%;
     height: 48px;
+    margin-top: 16px;
     border-radius: 24px;
     border: none;
     background-color: #BA4270;
@@ -46,12 +59,16 @@ input {
     transition: 150ms;
 }
 
+.phone-img {
+    height: 300px;
+}
+
 .schedule-btn:hover {
     background-color: #DA6D97;
 }
 
 .question {
-    font-family: Public Sans;
+    font-family: "Public Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
     color: #6C8294;
@@ -67,11 +84,10 @@ input {
 
 
 h1 {
-    font-family: DM Serif Sans;
+    font-family: "DM Serif Sans", serif;
     text-align: center;
     font-weight: 700;
     font-size: 32px;
-    width: 570px;
     color: #36536B;
 }
 
@@ -106,6 +122,33 @@ h1 {
         width: 90%;
     }
 
+    form {
+        display: block;
+        position: relative;
+    }
+
+    .phone-img {
+        height: 300px;
+    }
+
+    .schedule-btn {
+        width: 173px;
+        height: 48px;
+        margin-top: 16px;
+        border-radius: 24px;
+        border: none;
+        background-color: #BA4270;
+        color: #FBFCFE;
+        font-family: Public Sans;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 150ms;
+        position: absolute;
+        right: 0;
+        top: 24px;
+    }
+
     nav {
         width: 90%;
         margin-left: auto;
@@ -116,7 +159,17 @@ h1 {
         margin-left: 40px;
         margin-right: 40px;
     }
-    
+
+    input {
+        height: 48px;
+        border-radius: 24px;
+        border: none;
+        background-color: #FBFCFE;
+        padding-left: 27px;
+        margin-top: 40px;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+
     .navbar {
         display: flex;
     }
@@ -125,8 +178,11 @@ h1 {
         display: block;
     }
 
+    h1 {
+        font-size: 48px;
+    }
+
     .cta {
-        display: inline;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -147,7 +203,6 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
-
     nav {
         margin-left: auto;
         margin-right: auto;
@@ -161,4 +216,47 @@ h1 {
     .burger-menu {
         display: none;
     }
+
+    header {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-container {
+        flex-direction: row-reverse;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1100px;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+
+    .form-container {
+        width: 50%;
+    }
+
+    .phone-img {
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 72px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 }
